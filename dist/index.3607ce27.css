@@ -1,0 +1,159 @@
+.padding-main {
+  padding: 1.75rem 9.75rem;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizespeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *, :before, :after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+body {
+  height: 100vh;
+  background-color: #e1e0d6;
+  font-family: Anek Latin, sans-serif;
+  display: flex;
+}
+
+.menu {
+  max-width: 24rem;
+  height: 100vh;
+  background-color: #323739;
+  flex-direction: column;
+  padding: 0 3rem;
+  display: flex;
+}
+
+.menu h1 {
+  color: #e3b263;
+  padding-top: 3rem;
+  font-size: 4rem;
+  font-weight: 1000;
+}
+
+.menu ul {
+  text-align: right;
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+.menu ul li {
+  padding-top: 2rem;
+}
+
+.menu a {
+  color: #e9eaec;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.menu a :visited, .menu a :hover {
+  color: inherit;
+}
+
+.menu .watermark {
+  color: #e3b263;
+  text-align: right;
+  margin-top: auto;
+  padding-bottom: 2rem;
+  font-size: 1rem;
+}
+
+main {
+  color: #323739;
+  flex-direction: column;
+  gap: 3rem;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+}
+
+main .form {
+  min-width: 26rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+main .form input {
+  min-width: 100%;
+  text-align: center;
+  background-color: #3237391a;
+  border: none;
+  border-radius: 5px;
+  padding: .75rem 0;
+}
+
+main .form input:focus {
+  outline: none;
+}
+
+main .form p {
+  padding: 3rem 0 1rem;
+}
+
+main .outputs {
+  min-width: 100%;
+  background-color: #e3b263;
+  border-radius: 5px;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  font-size: 1.25rem;
+  display: flex;
+}
+
+main .outputs .monthly-payments, main .outputs .intrest-paid {
+  border-bottom: .15rem solid #323739;
+  justify-content: space-between;
+  display: flex;
+}
+
+@media (max-width: 53rem) {
+  .menu {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.3607ce27.css.map */
